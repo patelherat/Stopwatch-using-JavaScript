@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<title>Stopwatch using JavaScript</title>
+<head>
+
+<body>
+<input type="text" id="ans">
+<input type="button" onclick="start()" value="Start">
+<input type="button" onclick="stop()" value="Stop">
+
+<script>
+//var x,y;
+var t=0;
+var ti;
+//var on=0;
+function count(){
+document.getElementById("ans").value = t;
+t = t + 1;
+
+//var d = new Date();
+//x = d.getSeconds();
+//document.getElementById("ans").value = x;
+}
+
+function start() {
+  //if (!on) {
+    //on = 1;
+    ti = setInterval(count, 1000);
+  //}
+  }
+
+function stop(){
+	//document.getElementById("ans").value = 0;
+	clearInterval(ti);
+	//on=0;
+//var d = new Date();
+//y = d.getSeconds();
+//document.getElementById("ans").value = y;
+//document.getElementById("ans").value = y-x;
+}
+
+</script>
+
+</body>
+
+</html>
